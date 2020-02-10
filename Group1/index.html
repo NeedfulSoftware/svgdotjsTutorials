@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SVG.js</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.13/svg.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.draggable.js@3.0.2/dist/svg.draggable.min.js"></script>
+</head>
+<body>
+  <script>
+    var draw = SVG().addTo('body')
+    var g = draw.group()
+    g.rect(50, 50).move(50,50).fill('#f06')
+    g.circle(25).move(25,50).fill('#f06')
+    g.draggable()
+  </script>
+</body>
+</html>
